@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Procedural City Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <ul class="controls">
+    <li>
+      <button id="regenerate">Regenerate</button>
+    </li>
+
+    <li>
+      <button id="options">Options</button>
+    </li>
+  </ul>
+
+  <div class="options module hidden">
+
+    <section>
+
+      <h3>City Parameters</h3>
+
+      <div class="row">
+        <div class="col col-label">
+          <label for="grid_size">Grid Size</label>
+        </div>
+        <div class="col col-input">
+          <input type="number" name="grid_size" id="grid_size" min="0" value="15" step="5" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-label">
+          <label for="block_size">Block Size</label>
+        </div>
+        <div class="col col-input">
+          <input type="number" name="block_size" id="block_size" min="0" value="150" step="5" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-label">
+          <label for="block_margin">Block Margin</label>
+        </div>
+        <div class="col col-input">
+          <input type="number" name="block_margin" id="block_margin" min="0" value="10" step="1" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-label">
+          <label for="block_size">Road Width</label>
+        </div>
+        <div class="col col-input">
+          <input type="number" name="road_width" id="road_width" min="0" value="20" step="5" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-label">
+          <label for="tree_density">Tree Density</label>
+        </div>
+        <div class="col col-input">
+          <input type="number" name="tree_density" id="tree_density" min="0" value="70" step="10" />
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src='js/three.min.js'></script>
+  <script src='js/OrbitControls.js'></script>
+  <script src='js/perlin.js'></script>
+  <script src="js/procedural.city.generator.js"></script>
+
+</body>
+
+</html>

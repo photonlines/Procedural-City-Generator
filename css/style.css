@@ -1,0 +1,149 @@
+*,
+*:before,
+*:after {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  background: #2b4447;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  color: #2b3437;
+}
+
+.controls {
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  right: 10px;
+  top: 10px;
+}
+
+.controls li {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+button,
+a.button {
+  background-color: #ffffff;
+  transition: all 0.25s;
+  border-radius: 2px;
+  padding: 8px 10px;
+  font-size: 14px;
+  min-width: 80px;
+  cursor: pointer;
+  color: #2b3437;
+  border: 0;
+}
+
+button:hover,
+a.button:hover {
+  background: #dddddd;
+}
+
+button:active,
+a.button:active {
+  background: #dddddd;
+}
+
+.hidden {
+  display: none;
+}
+
+.module {
+  background: #ffffff;
+  position: absolute;
+  width: 235px;
+  padding: 10px;
+  top: 48px;
+  right: 10px;
+  max-height: 80%;
+  border-radius: 2px;
+  overflow: auto;
+  margin-top: 8px;
+}
+
+.module button,
+.module a.button {
+  text-decoration: none;
+  margin-right: 5px;
+  background: #2b3632;
+  color: #ffffff;
+}
+
+.module button:active,
+.module a.button:active {
+  background: #596b71;
+}
+
+.module section {
+  margin-bottom: 15px;
+}
+
+.module h3 {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 18px;
+}
+
+.options p {
+  margin: 0 0 20px 0;
+}
+
+.options .row {
+  margin-bottom: 5px;
+  margin-left: 18px;
+}
+
+.options .row.buttons {
+  margin: 20px 0 0 0;
+}
+
+.options .col {
+  display: inline-block;
+}
+
+.options .col-label {
+  width: 60%;
+}
+
+.options .col-input {
+  width: 35%;
+}
+
+label {
+  font-size: 13px;
+}
+
+input,
+textarea {
+  height: 25px;
+  color: #2b3437;
+  background: #ffffff;
+  padding: 12px 12px;
+  border-radius: 2px;
+  border: none;
+  width: 100%;
+}
+
+input[readonly] {
+  height: 25px;
+  background: #2b3437;
+  color: #ffffff;
+  border: 1px solid #2b3437;
+}
+
+input[type="number"] {
+  height: 25px;
+}
+
+input[type="number"]:hover::-webkit-inner-spin-button {
+  width: 14px;
+  height: 25px;
+}
